@@ -1,0 +1,36 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="home.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@200;400;600;800;900&display=swap" rel="stylesheet">
+    {% load static %}
+    <link rel="stylesheet" type="text/css" href="{% static 'css/home.css' %}">
+    <title>Document</title>
+</head>
+<header>
+    <div class="top">
+        <div class="name">Karan</div>
+        <a href="{% url 'home' %}" class="icon">
+            <img src="{% static 'images/moon-and-stars.png' %}" alt="Image">
+        </a>
+
+    </div>
+</header>
+<body>
+    <div class="main">
+        <a href="" class="card">
+            <h1>History</h1>
+            <h2>With this you can view the history of the dates we have gone on.</h2>
+        </a>
+        <a href="{% url 'generate' %}" class="card">
+            <h1>Generate</h1>
+            <h2>With this you can generate a new date for us to go on.</h2>
+        </a>          
+    </div>
+    
+</body>
+</html>
